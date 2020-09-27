@@ -23,9 +23,14 @@ def distance():       #Reading distance
     GPIO.output(Tr, GPIO.HIGH)
     time.sleep(0.000015)
     GPIO.output(Tr, GPIO.LOW)
+    tries = 0
+    max_tries = 1000
     while not GPIO.input(Ec):
-        pass
+        if (tries == max_tries):
+            return distance()
+        tries+=1
     t1 = time.time()
+ 
     while GPIO.input(Ec):
         pass
     t2 = time.time()
