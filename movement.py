@@ -27,9 +27,8 @@ Motor_B_Pin2  = 18
 pwn_A = 0
 pwm_B = 0
 
-multiplier_left = -1
-
-multiplier_right = 1
+multiplier_left = 1
+multiplier_right = -1
 
 def motorStop():#Motor stops
 	GPIO.output(Motor_A_Pin1, GPIO.LOW)
