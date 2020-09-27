@@ -32,11 +32,11 @@ def close_hand(degrees=7):
   servos.hand(degrees)
 
 def move_arm(position):
-  servos.arm_pos(position)
+  servo.arm_pos(position)
   time.sleep(.2)
   
 def move_wrist(degrees):
   #-90 to 90 degrees
-  servos.wrist(int((degrees/12)+6))
+  servo.wrist(int((degrees/12)+6))
   time.sleep(.25)
 
