@@ -6,13 +6,13 @@ import controller
 
 start = time.time()
 while True:
-    open_hand()
+    controller.open_hand()
     while ultrasonic.distance() > 0.4:
         #print(ultrasonic.distance())
         controller.move_forward(0.01)
     #left = bool(random.getrandbits(1))
     left = True
-    close_hand()
+    controller.close_hand()
     if(left):
         controller.turn_left(150)
     else:
