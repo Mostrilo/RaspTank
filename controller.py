@@ -16,11 +16,11 @@ def turn_right(degrees):
   movement.motorStop()
 
 def move_forward(seconds):
-   movement.moveTank(-100, 100)
+   movement.moveTank(100, 100)
    time.sleep(seconds)
 
 def move_backwards(seconds):
-   movement.moveTank(100, -100)
+   movement.moveTank(-100, -100)
    time.sleep(seconds)
 
   
