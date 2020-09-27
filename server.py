@@ -13,8 +13,8 @@ while True:
     left = bool(random.getrandbits(1))
     close_hand()
     if(left):
-        controller.turn_left(90)
+        controller.turn_left(150)
     else:
-        controller.turn_right(90)
+        controller.turn_right(150)
 #controller.turn_right(90)
 movement.destroy()
