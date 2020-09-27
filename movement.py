@@ -79,7 +79,7 @@ def moveRight(percentSpeed):#Motor 2 positive and negative rotation
 
 
 def moveLeft(percentSpeed):#Motor 1 positive and negative rotation
-	percentSpeed += multiplier_left
+	percentSpeed *= multiplier_left
 	if percentSpeed == 0: # stop
 		GPIO.output(Motor_A_Pin1, GPIO.LOW)
 		GPIO.output(Motor_A_Pin2, GPIO.LOW)
