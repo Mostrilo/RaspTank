@@ -104,29 +104,3 @@ def clean_all():
 	pwm.set_pwm(13, 0, 0)
 	pwm.set_pwm(14, 0, 0)
 	pwm.set_pwm(15, 0, 0)
-
-
-if __name__ == '__main__':
-	try:
-		pos_input = 0
-		OUT = 1
-		while 1:
-			a=input()
-			if OUT == 1:
-				if pos_input < 13:
-					pos_input+=1
-				else:
-					print('MAX')
-					OUT = 0
-			else:
-				if pos_input > 1:
-					pos_input-=1
-				else:
-					print('MIN')
-					OUT = 1
-			catch(pos_input)
-			print(pos_input)
-
-			pass
-	except KeyboardInterrupt:
-		clean_all()
