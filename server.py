@@ -5,6 +5,7 @@ import random
 import controller
 
 start = time.time()
+"""
 while True:
     controller.open_hand()
     while ultrasonic.distance() > 0.4:
@@ -14,8 +15,10 @@ while True:
     left = True
     controller.close_hand()
     if(left):
-        controller.turn_left(150)
+        controller.turn_left(90)
     else:
-        controller.turn_right(150)
+        controller.turn_right(90)
+"""
+controller.turn_right(90)
 #controller.turn_right(90)
 movement.destroy()
