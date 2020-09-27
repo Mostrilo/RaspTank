@@ -6,12 +6,12 @@ import random
 import servos
 
 def turn_left(degrees):
-  movement.moveTank(100, 100)
+  movement.moveTank(100, -100)
   time.sleep(.008888 * degrees)
   movement.motorStop()
 
 def turn_right(degrees):
-  movement.moveTank(-100, -100)
+  movement.moveTank(-100, 100)
   time.sleep(.008888 * degrees)
   movement.motorStop()
 
