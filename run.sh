@@ -21,7 +21,9 @@ if [ -d env ]
                 python3 -m venv env
                 source env/bin/activate
                 echo "Done"
-                echo "Installing pip dependencies"
+                echo "Installing apt and pip dependencies"
+                sudo apt-get update
+                sudo apt-get upgrade
                 sudo apt-get install python-setuptools
                 sudo apt-get install build-essential 
                 sudo apt-get install libssl-dev 
