@@ -33,7 +33,7 @@ if [ -d env ]
                 echo "Done"
                 echo "Adding default folder structure.."
                 mkdir tmp
-                mdkir tmp/sound_files/
+                mkdir tmp/sound_files/
                 mkdir tmp/recorded_voices/
                 echo "Done [Exited with 0]"
             fi
