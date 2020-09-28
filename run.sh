@@ -22,13 +22,13 @@ if [ -d env ]
                 source env/bin/activate
                 echo "Done"
                 echo "Installing apt and pip dependencies"
-                sudo apt-get update
-                sudo apt-get upgrade
-                sudo apt-get install python-setuptools
-                sudo apt-get install build-essential 
-                sudo apt-get install libssl-dev 
-                sudo apt-get install libffi-dev 
-                sudo apt-get install python3-dev
+                yes | sudo apt-get update
+                yes | sudo apt-get upgrade
+                yes | sudo apt-get install python-setuptools
+                yes | sudo apt-get install build-essential 
+                yes | sudo apt-get install libssl-dev 
+                yes | sudo apt-get install libffi-dev 
+                yes | sudo apt-get install python3-dev
                 pip install RPi.GPIO
                 pip install Adafruit_PCA9685
                 pip install playsound
