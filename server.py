@@ -1,10 +1,11 @@
-import movement 
-import ultrasonic 
-import time 
-import random
-import controller
+#import movement 
+#import ultrasonic 
+#import time 
+#import random
+#import controller
+import speakers
 
-start = time.time()
+#start = time.time()
 """
 while True:
     controller.open_hand()
@@ -19,6 +20,9 @@ while True:
     else:
         controller.turn_right(90)
 """
+"""
 controller.turn_right(90)
 #controller.turn_right(90)
-movement.destroy()
+"""
+#movement.destroy()
+speakers.
