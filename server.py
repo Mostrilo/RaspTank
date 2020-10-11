@@ -25,4 +25,7 @@ controller.turn_right(90)
 #controller.turn_right(90)
 """
 #movement.destroy()
-speakers.
+#speakers.
+controller.turn_right(90)
+#controller.turn_right(90)
+
