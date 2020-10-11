@@ -6,6 +6,10 @@ if [ ! "$BASH_VERSION" ]
         exit 1
     fi
 
+echo "Checking if all core files are up to date.."
+git pull
+echo "Done"
+
 echo "Checking if RaspTank dependencies and virtual environment is installed.."
 if [ -d env ]
     then
