@@ -26,16 +26,18 @@ if [ -d env ]
                 source env/bin/activate
                 echo "Done"
                 echo "Installing apt and pip dependencies"
-#                yes | sudo apt-get update
- #               yes | sudo apt-get upgrade
-  #              yes | sudo apt-get install python-setuptools
-   #             yes | sudo apt-get install build-essential 
-    #            yes | sudo apt-get install libssl-dev 
-     #           yes | sudo apt-get install libffi-dev 
-      #          yes | sudo apt-get install python3-dev
+                yes | sudo apt-get update
+                yes | sudo apt-get upgrade
+                yes | sudo apt-get install python-setuptools
+                yes | sudo apt-get install build-essential 
+                yes | sudo apt-get install libssl-dev 
+                yes | sudo apt-get install libffi-dev 
+                yes | sudo apt-get install python3-dev
+                yes | sudo apt-get install mpg123
+  
                 pip install RPi.GPIO
                 pip install Adafruit_PCA9685
-               pip install playsound
+                pip install playsound
                 echo "Done"
                 echo "Adding default folder structure.."
                 mkdir tmp
